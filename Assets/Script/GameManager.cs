@@ -35,6 +35,12 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    public void CreateTarget(Vector3 pos)
+    {
+        int index = Random.Range(0, targets.Count);
+       // Instantiate(targets[index]).GetComponent<Target>.SetPosition(pos);
+    }
+
     public void UpdateScore(int scoreToAdd)
     {
         score += scoreToAdd;
